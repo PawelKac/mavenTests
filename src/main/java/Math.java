@@ -19,6 +19,19 @@ package math;
             }
             return max;
         }
+
+
+    public static int calculateSum(int [] numbers) {
+            int sum = 0;
+            for(int number : numbers) {
+                sum += number;
+            }
+            return sum;
+        }
+
+        public static float calculateAverage(int[] numbers) {
+            return Math.calculateSum(numbers) / (float) numbers.length;
+        }
     }
 
 
